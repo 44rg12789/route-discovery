@@ -71,7 +71,7 @@ For this controller, the `/news/alternative-uri` route will be registered instea
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class NewsController
 {
@@ -87,7 +87,7 @@ For this controller, the `/alternative-uri` route will be registered instead of 
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class NewsController
 {
@@ -111,7 +111,7 @@ You can customize the verb to be used by adding a `Route` attribute to a method
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class NewsController
 {
@@ -133,7 +133,7 @@ For the controller below, the discovered route will have the name `special-name`
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class NewsController
 {
@@ -150,7 +150,7 @@ You can apply middleware to a route by adding a `Route` attribute and pass a mid
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Middleware\ValidateSignature;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class DownloadController
 {
@@ -165,7 +165,7 @@ To apply a middleware on all methods of a controller, use the `Route` attribute 
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Middleware\ValidateSignature;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 #[Route(middleware: ValidateSignature::class)]
 class DownloadController
@@ -191,7 +191,7 @@ For this controller, the `/users/edit/{user}` route will be registered.
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class UsersController
 {
@@ -208,8 +208,8 @@ In this following example this route will be registered: `/users/edit/{user}`. B
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
-use Spatie\RouteDiscovery\Attributes\Where;
+use Laravel\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Where;
 
 class UsersController
 {
@@ -230,8 +230,8 @@ You can also specify your own regex, by using the `Where` attribute.
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\Route;
-use Spatie\RouteDiscovery\Attributes\Where;
+use Laravel\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Where;
 
 class UsersController
 {
@@ -250,7 +250,7 @@ Using this controller, the route to `firstMethod` will only listen for request t
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Middleware\ValidateSignature;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 #[Route(domain: 'first.example.com')]
 class ExampleController
@@ -271,7 +271,7 @@ For this controller, only a route for the `anotherMethod` will be registered.
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+use Laravel\RouteDiscovery\Attributes\DoNotDiscover;
 
 class UsersController
 {
@@ -289,7 +289,7 @@ For this controller, not a single route will be registered.
 ```php
 namespace App\Http\Controllers;
 
-use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+use Laravel\RouteDiscovery\Attributes\DoNotDiscover;
 
 #[DoNotDiscover]
 class UsersController

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\Nested;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultRouteName\Nested;
 
 use Illuminate\Foundation\Auth\User;
 

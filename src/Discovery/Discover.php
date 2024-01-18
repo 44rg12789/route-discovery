@@ -1,16 +1,11 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Discovery;
+namespace Laravel\RouteDiscovery\Discovery;
 
 class Discover
 {
     public static function controllers(): DiscoverControllers
     {
         return new DiscoverControllers();
-    }
-
-    public static function views(): DiscoverViews
-    {
-        return new DiscoverViews();
     }
 }

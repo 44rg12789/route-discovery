@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
 
 class ZZZController
 {

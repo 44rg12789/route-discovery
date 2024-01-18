@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Discovery;
+namespace Laravel\RouteDiscovery\Discovery;
 
-use Spatie\RouteDiscovery\RouteRegistrar;
+use Laravel\RouteDiscovery\RouteRegistrar;
 
 class DiscoverControllers
 {

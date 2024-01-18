@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRoutes;
+namespace Laravel\RouteDiscovery\PendingRoutes;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use ReflectionAttribute;
 use ReflectionClass;
-use Spatie\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\DiscoveryAttribute;
+use Laravel\RouteDiscovery\Attributes\Route;
 use SplFileInfo;
 
 class PendingRoute

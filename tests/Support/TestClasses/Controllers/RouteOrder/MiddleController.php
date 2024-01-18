@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\RouteOrder;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class MiddleController
 {

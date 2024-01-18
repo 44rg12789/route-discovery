@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\Middleware;
 
-use Spatie\RouteDiscovery\Attributes\Route;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
+use Laravel\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Middleware\OtherTestMiddleware;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Middleware\TestMiddleware;
 
 #[Route(middleware: TestMiddleware::class)]
 class MiddlewareOnControllerController

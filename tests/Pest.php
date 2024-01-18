@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\RouteDiscovery\Tests\Support\TestCase;
+use Laravel\RouteDiscovery\Tests\Support\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
 

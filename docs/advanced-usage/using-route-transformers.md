@@ -49,7 +49,7 @@ You can create your own route transformer by letting a class implement the `Spat
 
 ```php
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRoute;
 
 interface PendingRouteTransformer
 {

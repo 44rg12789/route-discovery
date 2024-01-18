@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController\Photos;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\NestedWithParametersController\Photos;
 
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Models\Comment;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Models\Comment;
 
 class CommentsController
 {

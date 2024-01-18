@@ -12,7 +12,7 @@ You can also enable route discovery via the routes file.
 ```php
 // in a routes file
 
-use Spatie\RouteDiscovery\Discovery\Discover;
+use Laravel\RouteDiscovery\Discovery\Discover;
 
 Discover::views()->in(resource_path('views/auto'));
 ```
@@ -22,7 +22,7 @@ To use a prefix, add middleware, and more, you can put that call to `Discover::v
 ```php
 // in a routes file
 
-use Spatie\RouteDiscovery\Discovery\Discover;
+use Laravel\RouteDiscovery\Discovery\Discover;
 
 Route::prefix('my-discovered-views')->group(function() {
     Discover::views()->in(resource_path('views/auto'));

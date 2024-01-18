@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideHttpMethod;
 
 use Illuminate\Foundation\Auth\User;
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class OverrideHttpMethodController
 {

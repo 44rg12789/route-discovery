@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Invokable;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\Invokable;
 
 class InvokableController
 {

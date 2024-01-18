@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideFullUri;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideFullUri;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class OverrideFullUriController
 {

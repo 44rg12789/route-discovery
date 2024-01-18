@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRouteTransformers;
+namespace Laravel\RouteDiscovery\PendingRouteTransformers;
 
 use App\Http\Controllers\Controller as DefaultAppController;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteAction;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerWithDefaultLaravelTraits;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRoute;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerWithDefaultLaravelTraits;
 
 class RejectDefaultControllerMethodRoutes implements PendingRouteTransformer
 {

@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\RouteDiscovery;
+namespace Laravel\RouteDiscovery;
 
-use Spatie\RouteDiscovery\PendingRouteTransformers\AddControllerUriToActions;
-use Spatie\RouteDiscovery\PendingRouteTransformers\AddDefaultRouteName;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleDomainAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleDoNotDiscoverAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleFullUriAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleHttpMethodsAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleMiddlewareAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleRouteNameAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleUriAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers;
-use Spatie\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute;
-use Spatie\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast;
-use Spatie\RouteDiscovery\PendingRouteTransformers\RejectDefaultControllerMethodRoutes;
+use Laravel\RouteDiscovery\PendingRouteTransformers\AddControllerUriToActions;
+use Laravel\RouteDiscovery\PendingRouteTransformers\AddDefaultRouteName;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleDomainAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleDoNotDiscoverAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleFullUriAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleHttpMethodsAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleMiddlewareAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleRouteNameAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleUriAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleUrisOfNestedControllers;
+use Laravel\RouteDiscovery\PendingRouteTransformers\HandleWheresAttribute;
+use Laravel\RouteDiscovery\PendingRouteTransformers\MoveRoutesStartingWithParametersLast;
+use Laravel\RouteDiscovery\PendingRouteTransformers\RejectDefaultControllerMethodRoutes;
 
 class Config
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Spatie\RouteDiscovery;
+namespace Laravel\RouteDiscovery;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteAction;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteFactory;
-use Spatie\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRoute;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRouteFactory;
+use Laravel\RouteDiscovery\PendingRouteTransformers\PendingRouteTransformer;
 use SplFileInfo;
 use Symfony\Component\Finder\Finder;
 

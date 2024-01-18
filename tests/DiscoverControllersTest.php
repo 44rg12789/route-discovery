@@ -1,15 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Spatie\RouteDiscovery\Discovery\Discover;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod\CustomMethodController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerThatExtendsDefaultController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
-use Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\UsesUnionTypes\UnionController;
+use Laravel\RouteDiscovery\Discovery\Discover;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\CustomMethod\CustomMethodController;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController\ControllerThatExtendsDefaultController;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\Single\MyController;
+use Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\UsesUnionTypes\UnionController;
 
 it('can discover controller in a directory', function () {
     Discover::controllers()
-        ->useRootNamespace('Spatie\RouteDiscovery\Tests\\')
+        ->useRootNamespace('Laravel\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('Single'));
 
@@ -24,7 +24,7 @@ it('can discover controller in a directory', function () {
 
 it('does not discover routes for default Laravel skeleton controllers that have public methods', function () {
     Discover::controllers()
-        ->useRootNamespace('Spatie\RouteDiscovery\Tests\\')
+        ->useRootNamespace('Laravel\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('DefaultController'));
 
@@ -39,7 +39,7 @@ it('does not discover routes for default Laravel skeleton controllers that have 
 
 it('can discover controllers with custom methods', function () {
     Discover::controllers()
-        ->useRootNamespace('Spatie\RouteDiscovery\Tests\\')
+        ->useRootNamespace('Laravel\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('CustomMethod'));
 
@@ -55,7 +55,7 @@ it('can discover controllers with custom methods', function () {
 it('can use a prefix when discovering routes', function () {
     Route::prefix('my-prefix')->group(function () {
         Discover::controllers()
-            ->useRootNamespace('Spatie\RouteDiscovery\Tests\\')
+            ->useRootNamespace('Laravel\RouteDiscovery\Tests\\')
             ->useBasePath(test()->getTestPath())
             ->in(controllersPath('Single'));
     });
@@ -71,7 +71,7 @@ it('can use a prefix when discovering routes', function () {
 
 it('can handle a union parameter', function () {
     Discover::controllers()
-        ->useRootNamespace('Spatie\RouteDiscovery\Tests\\')
+        ->useRootNamespace('Laravel\RouteDiscovery\Tests\\')
         ->useBasePath($this->getTestPath())
         ->in(controllersPath('UsesUnionTypes'));
 

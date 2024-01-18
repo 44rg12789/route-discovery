@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\Nesting;
 
 class ParentController
 {

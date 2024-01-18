@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRoutes;
+namespace Laravel\RouteDiscovery\PendingRoutes;
 
 use Illuminate\Support\Str;
 use ReflectionClass;

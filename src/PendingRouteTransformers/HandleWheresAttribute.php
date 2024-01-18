@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRouteTransformers;
+namespace Laravel\RouteDiscovery\PendingRouteTransformers;
 
 use Illuminate\Support\Collection;
-use Spatie\RouteDiscovery\Attributes\Where;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRoute;
-use Spatie\RouteDiscovery\PendingRoutes\PendingRouteAction;
+use Laravel\RouteDiscovery\Attributes\Where;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRoute;
+use Laravel\RouteDiscovery\PendingRoutes\PendingRouteAction;
 
 class HandleWheresAttribute implements PendingRouteTransformer
 {

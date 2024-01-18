@@ -1,11 +1,10 @@
 {
-    "name": "spatie/laravel-route-discovery",
-    "description": "Auto register routes using PHP attributes",
+    "name": "laravel/route-discovery",
+    "description": "Auto register routes using PHP attributes.",
     "keywords": [
-        "spatie",
         "laravel-route-discovery"
     ],
-    "homepage": "https://github.com/spatie/laravel-route-discovery",
+    "homepage": "https://github.com/laravel/route-discovery",
     "license": "MIT",
     "authors": [
         {
@@ -13,14 +12,18 @@
             "email": "freek@spatie.be",
             "homepage": "https://spatie.be",
             "role": "Developer"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/contracts": "^8.67|^9.0|^10.0",
-        "illuminate/support": "^8.77|^9.0|^10.0",
-        "spatie/laravel-package-tools": "^1.10",
-        "symfony/finder": "^5.4.2|^6.0"
+        "illuminate/contracts": "^8.67|^9.0|^10.0|^11.0",
+        "illuminate/support": "^8.77|^9.0|^10.0|^11.0",
+        "symfony/finder": "^5.4.2|^6.0|^7.0"
     },
     "require-dev": {
         "nunomaduro/larastan": "^1.0.2|^2.0",
@@ -29,17 +32,18 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
+        "spatie/laravel-package-tools": "^1.10",
         "spatie/laravel-ray": "^1.27"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\RouteDiscovery\\": "src",
-            "Spatie\\RouteDiscovery\\Database\\Factories\\": "database/factories"
+            "Laravel\\RouteDiscovery\\": "src",
+            "Laravel\\RouteDiscovery\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\RouteDiscovery\\Tests\\": "tests"
+            "Laravel\\RouteDiscovery\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,23 +58,6 @@
             "pestphp/pest-plugin": true
         }
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Spatie\\RouteDiscovery\\RouteDiscoveryServiceProvider"
-            ]
-        }
-    },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "funding": [
-        {
-            "type": "github",
-            "url": "https://github.com/sponsors/spatie"
-        },
-        {
-            "type": "other",
-            "url": "https://spatie.be/open-source/support-us"
-        }
-    ]
+    "prefer-stable": true
 }

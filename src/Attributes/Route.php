@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Attributes;
+namespace Laravel\RouteDiscovery\Attributes;
 
 use Attribute;
 use Illuminate\Routing\Router;

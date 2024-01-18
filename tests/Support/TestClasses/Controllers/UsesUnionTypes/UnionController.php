@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\UsesUnionTypes;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\UsesUnionTypes;
 
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;

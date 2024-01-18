@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\PendingRoutes;
+namespace Laravel\RouteDiscovery\PendingRoutes;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
@@ -9,9 +9,9 @@ use ReflectionAttribute;
 use ReflectionMethod;
 use ReflectionNamedType;
 use ReflectionParameter;
-use Spatie\RouteDiscovery\Attributes\DiscoveryAttribute;
-use Spatie\RouteDiscovery\Attributes\Route;
-use Spatie\RouteDiscovery\Attributes\Where;
+use Laravel\RouteDiscovery\Attributes\DiscoveryAttribute;
+use Laravel\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Where;
 
 class PendingRouteAction
 {

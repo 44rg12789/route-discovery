@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\OverrideUri;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 class OverrideUriController
 {

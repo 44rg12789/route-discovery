@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\DefaultController;
 
 class ControllerThatExtendsDefaultController extends ControllerWithDefaultLaravelTraits
 {

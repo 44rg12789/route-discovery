@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\Domain;
 
-use Spatie\RouteDiscovery\Attributes\Route;
+use Laravel\RouteDiscovery\Attributes\Route;
 
 #[Route(domain: 'first.example.com')]
 class DomainController

@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverController;
+namespace Laravel\RouteDiscovery\Tests\Support\TestClasses\Controllers\DoNotDiscoverController;
 
-use Spatie\RouteDiscovery\Attributes\DoNotDiscover;
+use Laravel\RouteDiscovery\Attributes\DoNotDiscover;
 
 #[DoNotDiscover]
 class DoNotDiscoverController
