@@ -4,6 +4,7 @@ namespace Laravel\RouteDiscovery\PendingRouteTransformers;
 
 use Illuminate\Support\Collection;
 use Laravel\RouteDiscovery\Attributes\DoNotDiscover;
+use Laravel\RouteDiscovery\Attributes\DontDiscover;
 use Laravel\RouteDiscovery\PendingRoutes\PendingRoute;
 use Laravel\RouteDiscovery\PendingRoutes\PendingRouteAction;
 
@@ -17,11 +18,11 @@ class HandleDoNotDiscoverAttribute implements PendingRouteTransformer
     public function transform(Collection $pendingRoutes): Collection
     {
         return $pendingRoutes
-            ->reject(fn (PendingRoute $pendingRoute) => $pendingRoute->getAttribute(DoNotDiscover::class))
+            ->reject(fn (PendingRoute $pendingRoute) => $pendingRoute->getAttribute(DoNotDiscover::class) || $pendingRoute->getAttribute(DontDiscover::class))
             ->each(function (PendingRoute $pendingRoute) {
                 $pendingRoute->actions = $pendingRoute
                     ->actions
-                    ->reject(fn (PendingRouteAction $action) => $action->getAttribute(DoNotDiscover::class));
+                    ->reject(fn (PendingRouteAction $action) => $action->getAttribute(DoNotDiscover::class) || $action->getAttribute(DontDiscover::class));
             });
     }
 }

@@ -91,7 +91,7 @@ class RouteRegistrar
     protected function transformPendingRoutes(Collection $pendingRoutes): Collection
     {
         /** @var array<int, class-string<PendingRouteTransformer>> $transformers */
-        $transformers = config('route-discovery.pending_route_transformers');
+        $transformers = config('route-discovery.pending_route_transformers', Config::defaultRouteTransformers());
 
         /** @var Collection<int, PendingRouteTransformer> */
         $transformers = collect($transformers)
